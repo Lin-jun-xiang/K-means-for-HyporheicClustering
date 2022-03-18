@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 from mpl_toolkits.mplot3d import Axes3D
 from scipy.spatial import distance
 from sklearn.cluster import KMeans
-
+# git change
 
 class GetDataSet:
     """
