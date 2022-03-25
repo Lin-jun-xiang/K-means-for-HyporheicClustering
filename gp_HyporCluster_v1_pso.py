@@ -4,9 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from mpl_toolkits.mplot3d import Axes3D
-from scipy.spatial import distance
 from sklearn.cluster import KMeans
-# git change
+
 
 class GetDataSet:
     """
@@ -406,4 +405,3 @@ if __name__ == "__main__":
     df = pd.DataFrame([nodes.values, y, data['VZ'], abs(data['VZ'])]).T
     df.columns = ['Nodes', 'HYP', 'VZ', 'absVZ']
     df.to_excel("C:\\JunXiang\VSCode\Excel_py\\hypor.xlsx", index=False)
-

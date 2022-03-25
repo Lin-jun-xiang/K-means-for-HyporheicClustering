@@ -447,11 +447,6 @@ if __name__ == "__main__":
     df.columns = ['Nodes', 'HYP', 'VZ', 'absVZ', 'Pressure']
     df.to_excel("C:\\JunXiang\VSCode\Excel_py\\hypor_Sensitivity_LowerK_v2.xlsx", index=False)
 
-
-
-
-
-
     # show the feature range of HZ
     d = pd.concat([data, pd.DataFrame(y, columns=['label'])], axis=1)
     import seaborn as sns
@@ -485,9 +480,3 @@ if __name__ == "__main__":
     print(skewness_Pc1, skewness_Pc2)
     plt.scatter(df[df['label']==0]['P'], df[df['label']==0]['VZ'], alpha=0.1, color='red')
     plt.scatter(df[df['label']==1]['P'], df[df['label']==1]['VZ'], alpha=0.1)
-
-    # import seaborn as sns
-    # sns.distplot(df[df['label']==0]['P'], color='blue', label='Groundwater', hist=None)
-    # sns.distplot(df[df['label']==1]['P'], color='red', label='HZ', hist=None)
-    # plt.xlabel('Pressure')
-    # plt.legend(loc='upper right')
